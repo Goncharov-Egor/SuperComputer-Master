@@ -1,0 +1,92 @@
+﻿<Window x:Class="SuperComputer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuperComputer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800" Background="#FF19191F">
+    <Grid Margin="0,0,-0.4,-2.6">
+        <DataGrid x:Name="dataGrid1" Margin="151,0,0, 0" Background="#FFEBE8E8" FontWeight="ExtraLight" FontSize="14"/>
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="135" SelectionChanged="comboBox_SelectionChanged" FontFamily="Sitka Display" FontSize="16" Text="1-100">
+            <ComboBox.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientBrush.GradientStops>
+                        <GradientStopCollection>
+                            <GradientStop Color="#CCC" Offset="0.0"/>
+                            <GradientStop Color="#444" Offset="1.0"/>
+                        </GradientStopCollection>
+                    </GradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+
+            <TextBlock><Run Text="1-100"/></TextBlock>
+            <TextBlock>101-200</TextBlock>
+            <TextBlock>201-300</TextBlock>
+            <TextBlock>301-400</TextBlock>
+            <TextBlock>401-500</TextBlock>
+
+        </ComboBox>
+        <Button Height="100" Width="100" Margin="21,209,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click_2">
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid x:Name="controlLayout">
+                        <Ellipse x:Name="buttonSurface" Fill="LightBlue"></Ellipse>
+                        <Label x:Name="buttonCaption" VerticalAlignment="Center"
+						       HorizontalAlignment="Center"
+							   FontWeight="Bold" FontSize="15" Content="Show"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Height="100" Width="100" Margin="21,450,0,-0.4" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click_3">
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid x:Name="controlLayout">
+                        <Ellipse x:Name="buttonSurface" Fill="LightPink"/>
+                        <Label x:Name="buttonCaption" VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            FontWeight="Bold" FontSize="15" Content="Exit"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label x:Name="label" Content="Top" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top" Background="#FF19191F" Foreground="White"/>
+        <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="10,119,0,0" VerticalAlignment="Top" Width="135" SelectionChanged="comboBox2_SelectionChanged" FontFamily="Sitka Display" FontSize="16" Text="November 2019">
+            <ComboBox.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#CCC" Offset="0.0"/>
+                    <GradientStop Color="#444" Offset="1.0"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+
+            <TextBlock><Run Text="November 2019"/></TextBlock>
+            <TextBlock><Run Text="June 2019"/></TextBlock>
+            <TextBlock><Run Text="November 2018"/></TextBlock>
+            <TextBlock><Run Text="June 2018"/></TextBlock>
+            <TextBlock><Run Text="November 2017"/></TextBlock>
+            <TextBlock><Run Text="June 2017"/></TextBlock>
+            <TextBlock><Run Text="November 2016"/></TextBlock>
+            <TextBlock><Run Text="June 2016"/></TextBlock>
+            <TextBlock><Run Text="November 2015"/></TextBlock>
+            <TextBlock><Run Text="June 2015"/></TextBlock>
+            <TextBlock><Run Text="November 2014"/></TextBlock>
+            <TextBlock><Run Text="June 2014"/></TextBlock>
+
+        </ComboBox>
+        <Label x:Name="label_Copy" Content="Month and Year" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" Background="#FF19191F" Foreground="White"/>
+        <Button Height="100" Width="100" Margin="21,332,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click_4">
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid x:Name="controlLayout">
+                        <Ellipse x:Name="buttonSurface" Fill="LightSalmon"/>
+                        <Label x:Name="buttonCaption" VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            FontWeight="Bold" FontSize="15" Content="Wiki"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+    </Grid>
+</Window>
